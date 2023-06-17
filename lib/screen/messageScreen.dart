@@ -10,6 +10,5 @@ class MessageScreen extends StatelessWidget {
       drawer: const Drawer(),
       body: const Center(child: Text("All Messages Here"),),
     );
-    
   }
 }

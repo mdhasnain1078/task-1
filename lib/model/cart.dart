@@ -1,13 +1,23 @@
-
 import 'package:flutter/material.dart';
 
-enum Category{program, event, lesson}
-class Cart with ChangeNotifier{
+class Cart with ChangeNotifier {
+  final String id;
   final String imagePath;
-  final String title;
-  final String description;
-  final String lessons;
-  final Category category;
-  String dateTime;
-  Cart({required this.imagePath, required this.title, required this.description, required this.lessons, required this.category, this.dateTime = ''});
+  final String category;
+  final String name;
+  final int lessons;
+  bool? isLocked;
+  String? createdAt;
+  int? duration;
+  Cart( 
+      {
+      required this.id,
+      required this.imagePath,
+      required this.name,
+      required this.lessons,
+      required this.category,
+      this.createdAt,
+      this.isLocked,
+      this.duration
+      });
 }

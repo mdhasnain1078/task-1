@@ -4,8 +4,6 @@ import 'package:task1/constant/appTheme.dart';
 import 'package:task1/provider/carts.dart';
 import 'package:task1/screen/homeWrapper.dart';
 
-import 'model/cart.dart';
-
 void main() {
   runApp(const MyApp());
 }

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task1/model/cart.dart';
-import 'CartItem.dart';
+import 'CartItem_of_lesson_event.dart';
 
-class VerticalList extends StatelessWidget {
-  const VerticalList({super.key, required this.carts});
+class VerticalListOfEventsexperiences extends StatelessWidget {
+  const VerticalListOfEventsexperiences({super.key, required this.carts});
   final List<Cart> carts;
 
   @override
@@ -18,7 +18,7 @@ class VerticalList extends StatelessWidget {
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         itemCount: carts.length,
-        itemBuilder: (context, i) => ChangeNotifierProvider.value(value: carts[i], child: const CardItem(),),
+        itemBuilder: (context, i) => ChangeNotifierProvider.value(value: carts[i], child: const CartItemOfEventexperience(),),
         separatorBuilder: (BuildContext context, int index) => const SizedBox(
           width: 10,
         ),

@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
                 height: 24,
               ),
               FutureBuilder(
-                future: Provider.of<Carts>(context).getData1(),
+                future: Provider.of<Carts>(context).fetchData(),
                 builder: (BuildContext context, AsyncSnapshot<void> snapshot) =>
                     snapshot.connectionState == ConnectionState.waiting
                         ? const Center(
